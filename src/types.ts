@@ -14,6 +14,14 @@ export type Colorable = {
   color?: Color;
 };
 
+export type CommonEvents = {
+  onBlur: any;
+  onChange: any;
+  onInput: any;
+  onKeyup: any;
+  onKeydown: any;
+};
+
 export type Measurable = {
   height?: number;
   width?: number;
