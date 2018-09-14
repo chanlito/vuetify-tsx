@@ -1,3 +1,5 @@
+import { RouterLinkProps } from 'vue-tsx-support/options/enable-vue-router';
+
 export type Color =
   | 'primary'
   | 'secondary'
@@ -12,6 +14,10 @@ export type Color =
 
 export type Colorable = {
   color?: Color;
+};
+
+export type Disableable = {
+  disabled?: boolean;
 };
 
 export type CommonEvents = {
@@ -29,6 +35,8 @@ export type Measurable = {
   maxHeight?: number;
   maxWidth?: number;
 };
+
+export type Routable = Partial<RouterLinkProps>;
 
 export type Themable = {
   dark?: boolean;
