@@ -51,7 +51,7 @@ type Props = Colorable &
     readonly?: boolean;
     returnMaskedValue?: boolean;
     reverse?: boolean;
-    rules: ((...args: any[]) => boolean | string)[];
+    rules?: ((...args: any[]) => boolean | string)[];
     singleLine?: boolean;
     solo?: boolean;
     soloInverted?: boolean;
