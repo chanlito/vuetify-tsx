@@ -34,6 +34,7 @@ export { default as VRadioGroup } from './components/VRadioGroup';
 export { default as VResponsive } from './components/VResponsive';
 export { default as VSelect } from './components/VSelect';
 export { default as VSpacer } from './components/VSpacer';
+export { default as VSpeedDial } from './components/VSpeedDial';
 export { default as VSubheader } from './components/VSubheader';
 export { default as VTab } from './components/VTab';
 export { default as VTabItem } from './components/VTabItem';
