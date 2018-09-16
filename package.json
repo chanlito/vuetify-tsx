@@ -11,8 +11,7 @@
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vue-strict-prop": "^0.3.0",
-    "vue-tsx-support": "^2.1.1",
-    "vuetify": "^1.2.3"
+    "vue-tsx-support": "^2.1.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.3",
@@ -25,7 +24,11 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "typescript": "^3.0.0",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "vuetify": "^1.2.3"
+  },
+  "peerDependencies": {
+    "vuetify": "^1.2.x"
   },
   "babel": {
     "presets": [
