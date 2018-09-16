@@ -29,15 +29,51 @@ export type CommonEvents = {
   onKeydown: any;
 };
 
+export type Inputable = {
+  appendIcon?: string;
+  /** @deprecated */
+  appendIconCb?: Function;
+  backgroundColor?: string;
+  disabled?: boolean;
+  height?: number | string;
+  hideDetails?: boolean;
+  hint?: string;
+  label?: string;
+  persistentHint?: boolean;
+  prependIcon?: string;
+  /** @deprecated */
+  prependIconCb?: Function;
+  readonly?: boolean;
+  value?: any;
+};
+
 export type Imageable = {
+  alt?: string;
   contain?: boolean;
   cover?: boolean;
   gradient?: string;
   lazySrc?: string;
   position?: string;
   sizes?: string;
-  src?: string;
+  src?: string | SrcObject;
   srcset?: string;
+};
+
+export interface SrcObject {
+  src: string;
+  srcset?: string;
+  lazySrc: string;
+  aspect: number;
+}
+
+export type Loadable = {
+  loading?: boolean | string;
+};
+
+export type Maskable = {
+  dontFillMaskBlanks?: boolean;
+  mask?: string | object;
+  returnMaskedValue?: boolean;
 };
 
 export type Measurable = {
@@ -49,6 +85,8 @@ export type Measurable = {
 };
 
 export type Positionable = {
+  absolute?: boolean;
+  fixed?: boolean;
   top?: boolean;
   bottom?: boolean;
   left?: boolean;
@@ -56,12 +94,28 @@ export type Positionable = {
 };
 
 export type Rippleable = {
-  ripple?: boolean;
+  ripple?: boolean | object;
 };
 
-export type Routable = Partial<RouterLinkProps>;
+export type Routable = Rippleable &
+  Partial<RouterLinkProps> & {
+    href?: string | object;
+    tag?: string;
+    target?: string;
+    nuxt?: boolean;
+  };
+
+export type Selectable = {
+  id?: string;
+  inputValue?: any;
+  falseValue?: any;
+  trueValue?: any;
+  multiple?: boolean;
+  label?: string;
+};
 
 export type Sizeable = {
+  size?: string | number;
   small?: boolean;
   medium?: boolean;
   large?: boolean;
@@ -74,5 +128,18 @@ export type Themable = {
 };
 
 export type Transitionable = {
+  mode?: string;
+  origin?: string;
   transition?: boolean | string;
+};
+
+export type Validatable = {
+  error?: boolean;
+  errorCount?: number | string;
+  errorMessages?: string | string[];
+  messages?: string | string[];
+  rules?: ((...args: any[]) => boolean | string)[];
+  success?: boolean;
+  successMessages?: string | string[];
+  validateOnBlur?: boolean;
 };
