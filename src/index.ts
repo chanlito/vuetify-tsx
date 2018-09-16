@@ -1,3 +1,4 @@
+export const directives: any = require('vuetify/es5/directives');
 export { default as transitions } from './components/transitions';
 export { default as Vuetify } from './components/Vuetify';
 export { default as VAlert } from './components/VAlert';
