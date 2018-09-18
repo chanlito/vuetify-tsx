@@ -16,6 +16,11 @@ export type Colorable = {
   color?: Color;
 };
 
+export type Detachable = {
+  attach?: any;
+  contentClass?: string;
+};
+
 export type Disableable = {
   disabled?: boolean;
 };

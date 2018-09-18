@@ -18,6 +18,7 @@ export { default as VCarousel } from './components/VCarousel';
 export { default as VCarouselItem } from './components/VCarouselItem';
 export { default as VContent } from './components/VContent';
 export { default as VContainer } from './components/VContainer';
+export { default as VDialog } from './components/VDialog';
 export { default as VDivider } from './components/VDivider';
 export { default as VFlex } from './components/VFlex';
 export { default as VIcon } from './components/VIcon';
