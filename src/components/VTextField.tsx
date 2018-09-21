@@ -42,6 +42,7 @@ type Props = Colorable &
     prependInnerIcon?: string;
     /** @deprecated */
     prependInnerIconCb?: Function;
+    required?: boolean;
     reverse?: boolean;
     singleLine?: boolean;
     solo?: boolean;
