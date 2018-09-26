@@ -1,6 +1,2 @@
 node_modules
-public
-src
-typings
 .gitignore
-tsconfig.json
