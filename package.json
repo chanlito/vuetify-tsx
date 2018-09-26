@@ -4,8 +4,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "vue-cli-service build",
-    "prepare": "tsc"
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "vue": "^2.5.17",
@@ -25,7 +27,7 @@
     "stylus-loader": "^3.0.2",
     "typescript": "^3.0.0",
     "vue-template-compiler": "^2.5.17",
-    "vuetify": "^1.2.3"
+    "vuetify": "^1.2.5"
   },
   "peerDependencies": {
     "vuetify": "^1.2.x"
