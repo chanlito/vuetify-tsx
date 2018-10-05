@@ -1,6 +1,6 @@
 import { ofType } from 'vue-tsx-support';
 
-import { Themable } from '../types';
+import { Colorable, Themable } from '../types';
 
 const VProgressCircular = ofType<Props>().convert(
   require('vuetify/es5/components/VProgressCircular').VProgressCircular,
@@ -8,10 +8,11 @@ const VProgressCircular = ofType<Props>().convert(
 
 export default VProgressCircular;
 
-type Props = Themable & {
-  indeterminate?: boolean;
-  rotate?: number;
-  size?: number | string;
-  value?: any;
-  width?: number;
-};
+type Props = Colorable &
+  Themable & {
+    indeterminate?: boolean;
+    rotate?: number;
+    size?: number | string;
+    value?: any;
+    width?: number;
+  };
