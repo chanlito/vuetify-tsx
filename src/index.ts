@@ -32,6 +32,8 @@ export { default as VListTileSubTitle } from './components/VListTileSubTitle';
 export { default as VListTileTitle } from './components/VListTileTitle';
 export { default as VMenu } from './components/VMenu';
 export { default as VNavigationDrawer } from './components/VNavigationDrawer';
+export { default as VProgressCircular } from './components/VProgressCircular';
+export { default as VProgressLinear } from './components/VProgressLinear';
 export { default as VRadio } from './components/VRadio';
 export { default as VRadioGroup } from './components/VRadioGroup';
 export { default as VResponsive } from './components/VResponsive';
