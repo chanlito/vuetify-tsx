@@ -1,8 +1,4 @@
-# Vuetify TSX - (Vuetify but with typescript definition) 😅
-
-## Danger Ahead!
-
-> USE IT AT YOUR OWN RISK.
+# Vuetify TSX
 
 ## Setup
 
