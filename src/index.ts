@@ -16,6 +16,7 @@ export { default as VCardText } from './components/VCardText';
 export { default as VCardTitle } from './components/VCardTitle';
 export { default as VCarousel } from './components/VCarousel';
 export { default as VCarouselItem } from './components/VCarouselItem';
+export { default as VChip } from './components/VChip';
 export { default as VContent } from './components/VContent';
 export { default as VContainer } from './components/VContainer';
 export { default as VDialog } from './components/VDialog';
