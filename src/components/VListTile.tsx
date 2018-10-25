@@ -1,10 +1,10 @@
-import { ofType } from 'vue-tsx-support';
+import * as tsx from 'vue-tsx-support';
 
 import { Disableable, Colorable, Routable, Themable } from '../types';
 
-export default ofType<Props, Events>().convert(
-  require('vuetify/es5/components/VList').VListTile,
-);
+export default tsx
+  .ofType<Props, Events>()
+  .convert(require('vuetify/es5/components/VList').VListTile);
 
 type Props = Colorable &
   Disableable &
@@ -12,7 +12,7 @@ type Props = Colorable &
   Routable & {
     avatar?: boolean;
     inactive?: boolean;
-    tag?: string;
+    value?: any;
   };
 
 type Events = {

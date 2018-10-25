@@ -16,6 +16,10 @@ export type Colorable = {
   color?: Color;
 };
 
+export type Denseable = {
+  dense?: boolean;
+};
+
 export type Detachable = {
   attach?: any;
   contentClass?: string;
