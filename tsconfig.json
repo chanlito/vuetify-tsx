@@ -13,7 +13,7 @@
     "inlineSourceMap": true,
     "baseUrl": ".",
     "types": [
-      "node",
+      "webpack-env",
       "vue-tsx-support/enable-check",
       "vue-tsx-support/options/enable-vue-router"
     ],
