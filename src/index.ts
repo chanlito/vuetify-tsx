@@ -47,6 +47,8 @@ export { default as VTabItem } from './components/VTabItem';
 export { default as VTabs } from './components/VTabs';
 export { default as VTabsItems } from './components/VTabsItems';
 export { default as VTabsSlider } from './components/VTabsSlider';
+export { default as VTimeline } from './components/VTimeline';
+export { default as VTimelineItem } from './components/VTimelineItem';
 export { default as VTextarea } from './components/VTextarea';
 export { default as VTextField } from './components/VTextField';
 export { default as VToolbar } from './components/VToolbar';
