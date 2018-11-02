@@ -27,6 +27,7 @@ export { default as VImg } from './components/VImg';
 export { default as VLayout } from './components/VLayout';
 export { default as VList } from './components/VList';
 export { default as VListTile } from './components/VListTile';
+export { default as VListTileAction } from './components/VListTileAction';
 export { default as VListTileAvatar } from './components/VListTileAvatar';
 export { default as VListTileContent } from './components/VListTileContent';
 export { default as VListTileSubTitle } from './components/VListTileSubTitle';
