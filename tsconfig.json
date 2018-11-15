@@ -15,7 +15,8 @@
     "types": [
       "webpack-env",
       "vue-tsx-support/enable-check",
-      "vue-tsx-support/options/enable-vue-router"
+      "vue-tsx-support/options/enable-vue-router",
+      "vuetify"
     ],
     "paths": {
       "@/*": ["src/*"]

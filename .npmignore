@@ -1,2 +1,6 @@
-node_modules
 .gitignore
+dist/App.d.ts
+dist/App.jsx
+dist/main.d.ts
+dist/main.js
+node_modules
