@@ -1,19 +1,7 @@
 import { RouterLinkProps } from 'vue-tsx-support/options/enable-vue-router';
 
-export type Color =
-  | 'primary'
-  | 'secondary'
-  | 'accent'
-  | 'error'
-  | 'warning'
-  | 'info'
-  | 'success'
-  | 'white'
-  | 'black'
-  | 'grey';
-
 export type Colorable = {
-  color?: Color;
+  color?: string;
 };
 
 export type Denseable = {

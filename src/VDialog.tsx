@@ -12,7 +12,7 @@ type Props = Detachable &
     fullscreen?: boolean;
     hideOverlay?: boolean;
     lazy?: boolean;
-    maxWidth?: boolean;
+    maxWidth?: string | number;
     noClickAnimation?: boolean;
     origin?: string;
     persistent?: boolean;
