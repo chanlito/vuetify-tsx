@@ -7,7 +7,7 @@ import {
   Measurable,
   Rippleable,
   Routable,
-} from '../types';
+} from './types';
 
 export default ofType<Props>().convert(VCard as any);
 
