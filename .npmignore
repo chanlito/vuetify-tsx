@@ -1,10 +1,10 @@
 .gitignore
+lib/App.d.ts
+lib/App.jsx
+lib/main.d.ts
+lib/main.js
 dist/App.d.ts
 dist/App.jsx
 dist/main.d.ts
 dist/main.js
-App.d.ts
-App.jsx
-main.d.ts
-main.js
 node_modules
