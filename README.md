@@ -1,7 +1,8 @@
 # Vuetify TSX
 
 Vuetify TSX is just a wrapper lib around vuetify components.
-This lib use `vue-tsx-support` under the hood to support TSX (JSX for TypeScript).
+
+This lib uses `vue-tsx-support` under the hood to support TSX (JSX for TypeScript).
 
 ## Setup
 
