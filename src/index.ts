@@ -15,6 +15,7 @@ export { default as VCarousel } from './VCarousel';
 export { default as VCarouselItem } from './VCarouselItem';
 export { default as VCheckbox } from './VCheckbox';
 export { default as VChip } from './VChip';
+export { default as VCombobox } from './VCombobox';
 export { default as VContainer } from './VContainer';
 export { default as VContent } from './VContent';
 export { default as VDialog } from './VDialog';
