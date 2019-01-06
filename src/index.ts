@@ -18,6 +18,7 @@ export { default as VChip } from './VChip';
 export { default as VCombobox } from './VCombobox';
 export { default as VContainer } from './VContainer';
 export { default as VContent } from './VContent';
+export { default as VDataTable } from './VDataTable';
 export { default as VDialog } from './VDialog';
 export { default as VDivider } from './VDivider';
 export { default as VFlex } from './VFlex';
