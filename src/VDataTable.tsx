@@ -42,8 +42,8 @@ type Events = {
 };
 
 type ScopedSlots = {
-  headerCell: any;
-  headers: any;
-  items: any;
-  pageText: any;
+  headerCell?: any;
+  headers?: any;
+  items?: any;
+  pageText?: any;
 };
