@@ -15,7 +15,8 @@
     "build:app": "vue-cli-service build --dest build --mode production",
     "build:lib": "tsc",
     "prepare": "npm run build",
-    "serve": "vue-cli-service serve"
+    "serve": "vue-cli-service serve",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "vue": "^2.5.21",
