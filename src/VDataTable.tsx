@@ -15,7 +15,7 @@ type Props = Themable & {
   filter?: (val: object, search: string) => boolean;
   headerKey?: string;
   headerText?: string;
-  headers?: any[];
+  headers?: Header[];
   headersLength?: number;
   hideActions?: boolean;
   hideHeaders?: boolean;
@@ -26,7 +26,7 @@ type Props = Themable & {
   nextIcon?: string;
   noDataText?: string;
   noResultsText?: string;
-  pagination?: any;
+  pagination?: Pagination;
   prevIcon?: string;
   rowsPerPageItems?: any[];
   rowsPerPageText?: string;
@@ -35,6 +35,10 @@ type Props = Themable & {
   sortIcon?: string;
   totalItems?: number;
   value?: any[];
+  on?: {
+    'update:pagination'?: (pagination: Pagination) => void;
+    [key: string]: any;
+  };
 };
 
 type Events = {
@@ -42,8 +46,38 @@ type Events = {
 };
 
 type ScopedSlots = {
-  headerCell: any;
-  headers: any;
-  items: any;
-  pageText: any;
+  headerCell?: {
+    header: Header;
+  };
+  headers?: {
+    all: boolean;
+    headers: Header[];
+    indeterminate: boolean;
+  };
+  items: {
+    item: any;
+    index: number;
+  };
+  pageText?: {
+    itemsLength: number;
+    pageStart: number;
+    pageStop: number;
+  };
+};
+
+type Pagination = {
+  descending?: boolean;
+  page?: number;
+  rowsPerPage?: number;
+  sortBy?: string;
+  totalItems?: number;
+};
+
+type Header = {
+  text: string;
+  value: string;
+  align?: 'left' | 'center' | 'right';
+  sortable?: boolean;
+  class?: string[] | string;
+  width?: string;
 };
