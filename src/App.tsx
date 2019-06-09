@@ -2,6 +2,7 @@ import { component } from 'vue-tsx-support';
 
 import VAlert from './VAlert';
 import VApp from './VApp';
+import VAutocomplete from './VAutocomplete';
 import VAvatar from './VAvatar';
 import VBadge from './VBadge';
 import VBreadcrumbs from './VBreadcrumbs';
@@ -30,6 +31,23 @@ const SubTitle = component({
 const App = component({
   name: 'App',
   data: () => ({
+    autocomplete: {
+      selected: null as any,
+      items: [
+        {
+          id: 1,
+          name: 'Test-1',
+        },
+        {
+          id: 2,
+          name: 'Test-2',
+        },
+        {
+          id: 3,
+          name: 'Test-3',
+        },
+      ],
+    },
     breadcrumbs: [
       {
         text: 'Dashboard',
@@ -63,6 +81,21 @@ const App = component({
                   Awesome!
                 </VAlert>
                 <VAlert value={true}>Oh !@#$!</VAlert>
+
+                <SubTitle>Autocomplete</SubTitle>
+                <VAutocomplete
+                  v-model={this.autocomplete.selected}
+                  items={this.autocomplete.items}
+                  item-text="name"
+                  return-object
+                  clearable
+                />
+                <span>
+                  Selected ID:{' '}
+                  {this.autocomplete.selected !== null
+                    ? this.autocomplete.selected.id
+                    : 'Nothing selected'}
+                </span>
 
                 <SubTitle>Avatar</SubTitle>
                 <VAvatar size={50}>
