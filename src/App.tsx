@@ -1,17 +1,18 @@
 import { component } from 'vue-tsx-support';
-
-import VAlert from './VAlert';
-import VApp from './VApp';
-import VAvatar from './VAvatar';
-import VBadge from './VBadge';
-import VBreadcrumbs from './VBreadcrumbs';
-import VBtn from './VBtn';
-import VBtnToggle from './VBtnToggle';
-import VContainer from './VContainer';
-import VContent from './VContent';
-import VFlex from './VFlex';
-import VIcon from './VIcon';
-import VLayout from './VLayout';
+import {
+  VAlert,
+  VApp,
+  VAvatar,
+  VBadge,
+  VBreadcrumbs,
+  VBtn,
+  VBtnToggle,
+  VContainer,
+  VContent,
+  VFlex,
+  VIcon,
+  VLayout,
+} from './index';
 
 const Title = component({
   render() {
