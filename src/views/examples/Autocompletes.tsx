@@ -1,16 +1,13 @@
-import {
-  VAutocomplete,
-  VAvatar,
-  VChip,
-  VListTileAvatar,
-  VListTileContent,
-  VListTileSubTitle,
-  VListTileTitle,
-} from '@/components';
+import VAutocomplete from '@/components/VAutocomplete';
+import VAvatar from '@/components/VAvatar';
+import VChip from '@/components/VChip';
+import VListTileAvatar from '@/components/VListTileAvatar';
+import VListTileContent from '@/components/VListTileContent';
+import VListTileSubTitle from '@/components/VListTileSubTitle';
+import VListTileTitle from '@/components/VListTileTitle';
 import { component } from 'vue-tsx-support';
-import SubTitle from '../SubTitle';
 
-const AutocompleteExample2 = component({
+const Autocompletes = component({
   data: () => {
     const srcs = {
       1: 'https://cdn.vuetifyjs.com/images/lists/1.jpg',
@@ -21,6 +18,12 @@ const AutocompleteExample2 = component({
     };
 
     return {
+      selected: null as any,
+      items: [
+        { id: 1, name: 'Test-1' },
+        { id: 2, name: 'Test-2' },
+        { id: 3, name: 'Test-3' },
+      ],
       friends: ['Sandra Adams', 'Britta Holt'],
       people: [
         { header: 'Group 1' },
@@ -46,7 +49,23 @@ const AutocompleteExample2 = component({
   render() {
     return (
       <div>
-        <SubTitle>Autocomplete Scoped-Slots</SubTitle>
+        <h2 class="display-1 mb-3 font-weight-bold">Autocomplete</h2>
+        <VAutocomplete
+          v-model={this.selected}
+          items={this.items}
+          item-text="name"
+          // item-text={(value: any): string => value.name}
+          return-object
+          label="Tests"
+          clearable
+        />
+        <span>
+          Selected ID:{' '}
+          {this.selected !== null ? this.selected.id : 'Nothing selected'}
+        </span>
+        <h2 class="display-1 mb-3 font-weight-bold">
+          Autocomplete Scoped-Slots
+        </h2>
         <VAutocomplete
           v-model={this.friends}
           items={this.people}
@@ -93,4 +112,4 @@ const AutocompleteExample2 = component({
   },
 });
 
-export default AutocompleteExample2;
+export default Autocompletes;
