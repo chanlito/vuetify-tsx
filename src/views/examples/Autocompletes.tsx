@@ -8,6 +8,7 @@ import VListTileTitle from '@/components/VListTileTitle';
 import { component } from 'vue-tsx-support';
 
 const Autocompletes = component({
+  name: 'Autocompletes',
   data: () => {
     const srcs = {
       1: 'https://cdn.vuetifyjs.com/images/lists/1.jpg',
