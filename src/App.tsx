@@ -57,6 +57,10 @@ const App = component({
               label: 'Cards',
               to: { name: 'components-cards' },
             },
+            {
+              label: 'Timelines',
+              to: { name: 'components-timelines' },
+            },
           ],
         },
       ],
