@@ -26,9 +26,9 @@
     "lib": ["dom", "dom.iterable", "esnext", "scripthost"]
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
+    "src/index.ts",
+    "src/components/**/*.ts",
+    "src/components/**/*.tsx",
     "tests/**/*.ts",
     "tests/**/*.tsx",
     "typings"

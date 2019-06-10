@@ -11,7 +11,7 @@
   "scripts": {
     "clean": "rimraf lib",
     "prebuild": "npm run clean",
-    "build": "npm run build:lib",
+    "build": "npm run build:lib && npm run build:app",
     "build:app": "vue-cli-service build --mode production",
     "build:lib": "tsc",
     "prepare": "npm run build",
