@@ -7,6 +7,7 @@ export { default as VCardText } from './cards/VCardText';
 export { default as VCardTitle } from './cards/VCardTitle';
 export { default as VCarousel } from './carousels/VCarousel';
 export { default as VCarouselItem } from './carousels/VCarouselItem';
+export { default as VAutocomplete } from './inputs/VAutocomplete';
 export { default as VCheckbox } from './inputs/VCheckbox';
 export { default as VCombobox } from './inputs/VCombobox';
 export { default as VRadio } from './inputs/VRadio';

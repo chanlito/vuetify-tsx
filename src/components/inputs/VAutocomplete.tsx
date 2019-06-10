@@ -1,7 +1,7 @@
+import { Colorable, Inputable } from '@/shared/types';
 import { Component as VueComponent } from 'vue';
 import { ofType } from 'vue-tsx-support';
 import { VAutocomplete } from 'vuetify/lib';
-import { Colorable, Inputable } from './types';
 
 export default ofType<Props, Events, ScopedSlot>().convert(
   VAutocomplete as any,
