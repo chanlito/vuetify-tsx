@@ -9,7 +9,7 @@
     "url": "https://github.com/chanlito/vuetify-tsx"
   },
   "scripts": {
-    "clean": "rm -rf lib",
+    "clean": "rimraf lib",
     "prebuild": "npm run clean",
     "build": "npm run build:lib",
     "build:app": "vue-cli-service build --dest build --mode production",
@@ -32,6 +32,9 @@
     "@vue/cli-service": "^3.8.0",
     "@vue/eslint-config-prettier": "^4.0.1",
     "@vue/eslint-config-typescript": "^4.0.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "rimraf": "^2.6.3",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "typescript": "3.4.5",
@@ -62,7 +65,7 @@
       "vue/require-default-prop": "off"
     },
     "parserOptions": {
-      "parser": "typescript-eslint-parser"
+      "parser": "@typescript-eslint/parser"
     }
   },
   "postcss": {
