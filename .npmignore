@@ -1,8 +1,10 @@
 .editorconfig
 .gitignore
-lib/App.d.ts
-lib/App.jsx
-lib/examples
-lib/main.d.ts
-lib/main.js
+dist
 node_modules
+public
+src/*
+!src/components
+!src/shared
+!src/index.ts
+typings
