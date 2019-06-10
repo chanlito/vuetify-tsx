@@ -2,6 +2,7 @@
 .gitignore
 lib/App.d.ts
 lib/App.jsx
+lib/examples
 lib/main.d.ts
 lib/main.js
 node_modules
