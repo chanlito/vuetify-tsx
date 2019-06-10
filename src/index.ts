@@ -1,5 +1,6 @@
 export { default as VAlert } from './components/VAlert';
 export { default as VApp } from './components/VApp';
+export { default as VAutocomplete } from './components/VAutocomplete';
 export { default as VAvatar } from './components/VAvatar';
 export { default as VBadge } from './components/VBadge';
 export { default as VBreadcrumbs } from './components/VBreadcrumbs';

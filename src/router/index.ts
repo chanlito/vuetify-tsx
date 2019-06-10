@@ -1,5 +1,6 @@
 import Components from '@/views/Components';
 import Alerts from '@/views/examples/Alerts';
+import Autocompletes from '@/views/examples/Autocompletes';
 import Avatars from '@/views/examples/Avatars';
 import Breadcrumbs from '@/views/examples/Breadcrumbs';
 import Buttons from '@/views/examples/Buttons';
@@ -28,6 +29,11 @@ const router = new Router({
           path: 'alerts',
           name: 'components-alerts',
           component: Alerts,
+        },
+        {
+          path: 'autocompletes',
+          name: 'components-autocompletes',
+          component: Autocompletes,
         },
         {
           path: 'avatars',
