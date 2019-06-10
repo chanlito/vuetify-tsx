@@ -6,6 +6,8 @@ import BreadcrumbExample1 from './examples/breadcrumbs/BreadcrumbExample1';
 import ButtonExample1 from './examples/buttons/ButtonExample1';
 import ButtonToggleExample1 from './examples/buttons/ButtonToggleExample1';
 import CardExample1 from './examples/cards/CardExample1';
+import AutocompleteExample1 from './examples/inputs/AutocompleteExample1';
+import AutocompleteExample2 from './examples/inputs/AutocompleteExample2';
 import Title from './examples/Title';
 import { VApp, VContainer, VContent, VFlex, VLayout } from './index';
 
@@ -21,6 +23,8 @@ const App = component({
             </VLayout>
             <VLayout>
               <VFlex>
+                <AutocompleteExample1 />
+                <AutocompleteExample2 />
                 <AlertExample1 />
                 <AvatarExample1 />
                 <BadgeExample1 />
