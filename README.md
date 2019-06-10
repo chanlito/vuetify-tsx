@@ -1,5 +1,7 @@
 # Vuetify TSX
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f2703aa2-8278-4f58-9f2a-ffa5fe1bb5c5/deploy-status)](https://app.netlify.com/sites/vuetify-tsx/deploys)
+
 Vuetify TSX is just a wrapper lib around vuetify components.
 
 This lib uses [`vue-tsx-support`](https://github.com/wonderful-panda/vue-tsx-support) under the hood to support TSX (JSX for TypeScript).
