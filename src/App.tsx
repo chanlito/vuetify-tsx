@@ -38,6 +38,10 @@ const App = component({
               to: { name: 'components-alerts' },
             },
             {
+              label: 'Autocompletes',
+              to: { name: 'components-autocompletes' },
+            },
+            {
               label: 'Avatars',
               to: { name: 'components-avatars' },
             },
