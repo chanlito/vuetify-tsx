@@ -1,6 +1,7 @@
-import { Themable } from '@/shared/types';
 import { ofType } from 'vue-tsx-support';
 import { VBtnToggle } from 'vuetify/lib';
+
+import { Themable } from '../shared/types';
 
 export default ofType<Props, Events>().convert(VBtnToggle as any);
 

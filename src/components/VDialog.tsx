@@ -1,11 +1,12 @@
+import { ofType } from 'vue-tsx-support';
+import { VDialog } from 'vuetify/lib';
+
 import {
   Detachable,
   Disableable,
   Themable,
   Transitionable,
-} from '@/shared/types';
-import { ofType } from 'vue-tsx-support';
-import { VDialog } from 'vuetify/lib';
+} from '../shared/types';
 
 export default ofType<Props, Events>().convert(VDialog as any);
 

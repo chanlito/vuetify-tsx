@@ -16,20 +16,27 @@ npm install vuetify-tsx
 
 ```tsx
 import { component } from 'vue-tsx-support';
+
 import { VApp, VContent } from 'vuetify-tsx';
 
-export default component({
-  name: 'Default',
+// or import directly
+import VApp from 'vuetify-tsx/lib/components/VApp';
+import VContent from 'vuetify-tsx/lib/components/VContent';
+
+const App = component({
+  name: 'App',
   render() {
     return (
       <VApp>
         <VContent>
-          <nuxt />
+          <router-view />
         </VContent>
       </VApp>
     );
   },
 });
+
+export default App;
 ```
 
 For more examples, see the [examples](./src/examples) folder in this repository.  
@@ -40,18 +47,20 @@ You can see the examples by checking out the project and using `npm install` and
 Use `babel-plugin-import` to reduce bundle size.
 
 ```js
-{
+// inside babel.config.js
+module.exports = {
+  presets: ['@vue/app'],
   plugins: [
     [
       'import',
       {
         libraryName: 'vuetify-tsx',
-        libraryDirectory: 'lib',
+        libraryDirectory: 'lib/components',
         camel2DashComponentName: false,
       },
     ],
   ],
-}
+};
 ```
 
 ## Contributors

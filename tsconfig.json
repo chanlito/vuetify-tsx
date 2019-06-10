@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "outDir": "lib",
     "target": "esnext",
     "module": "esnext",
@@ -13,7 +15,7 @@
     "inlineSourceMap": true,
     "baseUrl": ".",
     "types": [
-      // "webpack-env",
+      "webpack-env",
       "vue-tsx-support/enable-check",
       "vue-tsx-support/options/enable-vue-router",
       "vuetify"
