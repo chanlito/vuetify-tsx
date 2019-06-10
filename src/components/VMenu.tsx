@@ -1,12 +1,13 @@
+import { ofType } from 'vue-tsx-support';
+import { VMenu } from 'vuetify/lib';
+
 import {
   Detachable,
   Disableable,
   Positionable,
   Themable,
   Transitionable,
-} from '@/shared/types';
-import { ofType } from 'vue-tsx-support';
-import { VMenu } from 'vuetify/lib';
+} from '../shared/types';
 
 export default ofType<Props>().convert(VMenu as any);
 

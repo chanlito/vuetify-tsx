@@ -1,12 +1,13 @@
+import { ofType } from 'vue-tsx-support';
+import { VChip } from 'vuetify/lib';
+
 import {
   Colorable,
   CommonEvents,
   Disableable,
   Sizeable,
   Themable,
-} from '@/shared/types';
-import { ofType } from 'vue-tsx-support';
-import { VChip } from 'vuetify/lib';
+} from '../shared/types';
 
 export default ofType<Props, Events>().convert(VChip as any);
 

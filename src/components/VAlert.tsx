@@ -1,12 +1,13 @@
-import { Colorable, Transitionable } from '@/shared/types';
 import { ofType } from 'vue-tsx-support';
 import { VAlert } from 'vuetify/lib';
+
+import { Colorable, Transitionable } from '../shared/types'; // don't use `@/shared/types`
 
 export default ofType<Props, Events>().convert(VAlert as any);
 
 type Props = Colorable &
   Transitionable & {
-    dismissable?: boolean;
+    dismissible?: boolean;
     icon?: string;
     mode?: string;
     origin?: string;

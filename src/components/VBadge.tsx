@@ -1,6 +1,7 @@
-import { Colorable, Positionable, Transitionable } from '@/shared/types';
 import { ofType } from 'vue-tsx-support';
 import { VBadge } from 'vuetify/lib';
+
+import { Colorable, Positionable, Transitionable } from '../shared/types';
 
 export default ofType<Props, Events>().convert(VBadge as any);
 

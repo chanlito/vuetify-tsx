@@ -1,7 +1,8 @@
-import { Colorable, Themable } from '@/shared/types';
 import { ofType } from 'vue-tsx-support';
 import { RouterLinkProps } from 'vue-tsx-support/options/enable-vue-router';
 import { VBtn } from 'vuetify/lib';
+
+import { Colorable, Themable } from '../shared/types';
 
 export default ofType<Props, Events>().convert(VBtn as any);
 

@@ -1,6 +1,6 @@
 {
   "name": "vuetify-tsx",
-  "version": "0.25.1",
+  "version": "0.26.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
@@ -11,9 +11,9 @@
   "scripts": {
     "clean": "rimraf lib",
     "prebuild": "npm run clean",
-    "build": "npm run build:lib",
-    "build:app": "vue-cli-service build --dest build --mode production",
-    "build:lib": "tsc",
+    "build": "npm run build:lib && npm run build:app",
+    "build:app": "vue-cli-service build --mode production",
+    "build:lib": "tsc -p tsconfig.build.json",
     "prepare": "npm run build",
     "serve": "vue-cli-service serve",
     "postversion": "git push && git push --tags"
@@ -38,7 +38,9 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "typescript": "3.4.5",
+    "vue-class-component": "^7.1.0",
     "vue-cli-plugin-webpack-bundle-analyzer": "^1.3.0",
+    "vue-property-decorator": "^8.1.1",
     "vue-template-compiler": "^2.6.10",
     "vuetify": "^1.5.14"
   },
