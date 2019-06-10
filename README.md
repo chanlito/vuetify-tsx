@@ -7,6 +7,8 @@ This lib uses [`vue-tsx-support`](https://github.com/wonderful-panda/vue-tsx-sup
 ## Setup
 
 ```bash
+yarn add vuetify-tsx
+# OR
 npm install vuetify-tsx
 ```
 
@@ -37,6 +39,9 @@ const App = component({
 export default App;
 ```
 
+For more examples, see the [examples](https://github.com/chanlito/vuetify-tsx/tree/master/src/views/examples) folder in this repository.  
+You can see the examples by checking out the project and using `npm install` and then `npm run serve`.
+
 ## Tip
 
 Use `babel-plugin-import` to reduce bundle size.
@@ -58,6 +63,10 @@ module.exports = {
 };
 ```
 
+## Contributors
+
+This project exists thanks to all the people who [contribute](https://github.com/chanlito/vuetify-tsx/graphs/contributors) 🚀!
+
 ## LICENSE
 
-MIT
+[MIT](https://opensource.org/licenses/MIT)
