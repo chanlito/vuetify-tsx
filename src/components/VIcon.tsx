@@ -1,12 +1,13 @@
+import { ofType } from 'vue-tsx-support';
+import { VIcon } from 'vuetify/lib';
+
 import {
   Colorable,
   Disableable,
   Positionable,
   Sizeable,
   Themable,
-} from '@/shared/types';
-import { ofType } from 'vue-tsx-support';
-import { VIcon } from 'vuetify/lib';
+} from '../shared/types';
 
 export default ofType<Props>().convert(VIcon as any);
 

@@ -1,3 +1,6 @@
+import { ofType } from 'vue-tsx-support';
+import { VTextarea } from 'vuetify/lib';
+
 import {
   Colorable,
   CommonEvents,
@@ -6,9 +9,7 @@ import {
   Measurable,
   Themable,
   Validatable,
-} from '@/shared/types';
-import { ofType } from 'vue-tsx-support';
-import { VTextarea } from 'vuetify/lib';
+} from '../shared/types';
 
 export default ofType<Props, Events>().convert(VTextarea as any);
 

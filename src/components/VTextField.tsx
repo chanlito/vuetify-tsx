@@ -1,3 +1,6 @@
+import { ofType } from 'vue-tsx-support';
+import { VTextField } from 'vuetify/lib';
+
 import {
   Colorable,
   CommonEvents,
@@ -7,9 +10,7 @@ import {
   Measurable,
   Themable,
   Validatable,
-} from '@/shared/types';
-import { ofType } from 'vue-tsx-support';
-import { VTextField } from 'vuetify/lib';
+} from '../shared/types';
 
 export default ofType<Props, Events>().convert(VTextField as any);
 

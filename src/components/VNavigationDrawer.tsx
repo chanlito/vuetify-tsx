@@ -1,6 +1,7 @@
-import { Themable } from '@/shared/types';
 import { ofType } from 'vue-tsx-support';
 import { VNavigationDrawer } from 'vuetify/lib';
+
+import { Themable } from '../shared/types';
 
 export default ofType<Props, Events>().convert(VNavigationDrawer as any);
 

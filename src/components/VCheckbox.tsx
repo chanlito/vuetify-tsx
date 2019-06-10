@@ -1,3 +1,6 @@
+import { ofType } from 'vue-tsx-support';
+import { VCheckbox } from 'vuetify/lib';
+
 import {
   Disableable,
   Inputable,
@@ -5,9 +8,7 @@ import {
   Selectable,
   Themable,
   Validatable,
-} from '@/shared/types';
-import { ofType } from 'vue-tsx-support';
-import { VCheckbox } from 'vuetify/lib';
+} from '../shared/types';
 
 export default ofType<Props, Events>().convert(VCheckbox as any);
 

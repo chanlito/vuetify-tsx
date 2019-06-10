@@ -1,6 +1,7 @@
-import { Colorable, Routable, Themable } from '@/shared/types';
 import { ofType } from 'vue-tsx-support';
 import { VTabs } from 'vuetify/lib';
+
+import { Colorable, Routable, Themable } from '../shared/types';
 
 export default ofType<Props, Events>().convert(VTabs as any);
 

@@ -1,6 +1,7 @@
-import { Colorable, Disableable, Routable, Themable } from '@/shared/types';
 import { ofType } from 'vue-tsx-support';
 import { VListTile } from 'vuetify/lib';
+
+import { Colorable, Disableable, Routable, Themable } from '../shared/types';
 
 export default ofType<Props, Events>().convert(VListTile as any);
 

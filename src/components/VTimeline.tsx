@@ -1,6 +1,7 @@
-import { Denseable, Themable } from '@/shared/types';
 import { ofType } from 'vue-tsx-support';
 import { VTimeline } from 'vuetify/lib';
+
+import { Denseable, Themable } from '../shared/types';
 
 export default ofType<Props, Events>().convert(VTimeline as any);
 

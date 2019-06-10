@@ -1,6 +1,7 @@
-import { Colorable, Denseable, Themable } from '@/shared/types';
 import { ofType } from 'vue-tsx-support';
 import { VToolbar } from 'vuetify/lib';
+
+import { Colorable, Denseable, Themable } from '../shared/types';
 
 export default ofType<Props>().convert(VToolbar as any);
 

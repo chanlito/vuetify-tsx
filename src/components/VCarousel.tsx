@@ -1,6 +1,7 @@
-import { Themable } from '@/shared/types';
 import { ofType } from 'vue-tsx-support';
 import { VCarousel } from 'vuetify/lib';
+
+import { Themable } from '../shared/types';
 
 export default ofType<Props, Events>().convert(VCarousel as any);
 

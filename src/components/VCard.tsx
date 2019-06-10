@@ -1,12 +1,13 @@
+import { ofType } from 'vue-tsx-support';
+import { VCard } from 'vuetify/lib';
+
 import {
   Colorable,
   Disableable,
   Measurable,
   Rippleable,
   Routable,
-} from '@/shared/types';
-import { ofType } from 'vue-tsx-support';
-import { VCard } from 'vuetify/lib';
+} from '../shared/types';
 
 export default ofType<Props>().convert(VCard as any);
 

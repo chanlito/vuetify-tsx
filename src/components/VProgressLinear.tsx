@@ -1,6 +1,7 @@
-import { Colorable, Themable } from '@/shared/types';
 import { ofType } from 'vue-tsx-support';
 import { VProgressLinear } from 'vuetify/lib';
+
+import { Colorable, Themable } from '../shared/types';
 
 export default ofType<Props>().convert(VProgressLinear as any);
 

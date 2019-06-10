@@ -1,6 +1,7 @@
-import { Colorable, Themable } from '@/shared/types';
 import { ofType } from 'vue-tsx-support';
 import { VTimelineItem } from 'vuetify/lib';
+
+import { Colorable, Themable } from '../shared/types';
 
 export default ofType<Props, Events>().convert(VTimelineItem as any);
 

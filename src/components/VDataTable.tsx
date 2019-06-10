@@ -1,6 +1,7 @@
-import { Themable } from '@/shared/types';
 import { ofType } from 'vue-tsx-support';
 import { VDataTable } from 'vuetify/lib';
+
+import { Themable } from '../shared/types';
 
 export default ofType<Props, Events, ScopedSlots>().convert(VDataTable as any);
 

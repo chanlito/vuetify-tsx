@@ -1,3 +1,6 @@
+import { ofType } from 'vue-tsx-support';
+import { VCombobox } from 'vuetify/lib';
+
 import {
   Colorable,
   CommonEvents,
@@ -8,9 +11,7 @@ import {
   Selectable,
   Themable,
   Validatable,
-} from '@/shared/types';
-import { ofType } from 'vue-tsx-support';
-import { VCombobox } from 'vuetify/lib';
+} from '../shared/types';
 
 export default ofType<Props, Events, ScopedSlots>().convert(VCombobox as any);
 
