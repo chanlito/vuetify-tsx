@@ -1,4 +1,4 @@
-import VBtn from '@/components/VBtn';
+import { VBtn } from '@/index';
 import { component } from 'vue-tsx-support';
 import SubTitle from '../SubTitle';
 

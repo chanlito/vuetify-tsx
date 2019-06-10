@@ -1,4 +1,4 @@
-import { VBtn, VCard, VCardActions, VCardTitle, VImg } from '@/components';
+import { VBtn, VCard, VCardActions, VCardTitle, VImg } from '@/index';
 import { component } from 'vue-tsx-support';
 import SubTitle from '../SubTitle';
 

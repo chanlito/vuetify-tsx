@@ -1,4 +1,4 @@
-import VAvatar from '@/components/VAvatar';
+import { VAvatar } from '@/index';
 import { component } from 'vue-tsx-support';
 import SubTitle from '../SubTitle';
 

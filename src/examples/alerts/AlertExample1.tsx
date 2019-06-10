@@ -1,4 +1,4 @@
-import VAlert from '@/components/VAlert';
+import { VAlert } from '@/index';
 import { component } from 'vue-tsx-support';
 import SubTitle from '../SubTitle';
 

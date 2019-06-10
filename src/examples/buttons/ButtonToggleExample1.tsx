@@ -1,6 +1,4 @@
-import VBtn from '@/components/VBtn';
-import VBtnToggle from '@/components/VBtnToggle';
-import VIcon from '@/components/VIcon';
+import { VBtn, VBtnToggle, VIcon } from '@/index';
 import { component } from 'vue-tsx-support';
 import SubTitle from '../SubTitle';
 

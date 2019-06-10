@@ -1,4 +1,4 @@
-import VBreadcrumbs from '@/components/breadcrumbs/VBreadcrumbs';
+import { VBreadcrumbs } from '@/index';
 import { component } from 'vue-tsx-support';
 import SubTitle from '../SubTitle';
 
