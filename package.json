@@ -13,7 +13,7 @@
     "prebuild": "npm run clean",
     "build": "npm run build:lib && npm run build:app",
     "build:app": "vue-cli-service build --mode production",
-    "build:lib": "tsc",
+    "build:lib": "tsc -p tsconfig.build.json",
     "prepare": "npm run build",
     "serve": "vue-cli-service serve",
     "postversion": "git push && git push --tags"
