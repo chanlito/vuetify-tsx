@@ -1,0 +1,10 @@
+{
+  "name": "Vuetify TSX",
+  "short_name": "Vuetify TSX",
+  "description": "Vuetify TSX is just a wrapper lib around vuetify components.",
+  "theme_color": "#FF9800",
+  "background_color": "#000000",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

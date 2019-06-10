@@ -1,8 +1,8 @@
-import VBreadcrumbs from '@/components/breadcrumbs/VBreadcrumbs';
+import VBreadcrumbs from '@/components/VBreadcrumbs';
 import { component } from 'vue-tsx-support';
-import SubTitle from '../SubTitle';
 
-const BreadcrumbExample1 = component({
+const Breadcrumbs = component({
+  name: 'Breadcrumbs',
   data: () => ({
     breadcrumbs: [
       {
@@ -25,7 +25,7 @@ const BreadcrumbExample1 = component({
   render() {
     return (
       <div>
-        <SubTitle>Breadcrumbs</SubTitle>
+        <h2 class="display-1 mb-3 font-weight-bold">Alerts</h2>
         <VBreadcrumbs items={this.breadcrumbs} divider=">" />
         <VBreadcrumbs
           items={this.breadcrumbs}
@@ -47,4 +47,4 @@ const BreadcrumbExample1 = component({
   },
 });
 
-export default BreadcrumbExample1;
+export default Breadcrumbs;

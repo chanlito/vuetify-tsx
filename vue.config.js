@@ -1,8 +1,8 @@
 module.exports = {
   pluginOptions: {
     webpackBundleAnalyzer: {
-      analyzerMode: 'disabled',
-      openAnalyzer: false,
+      analyzerMode: 'disabled', // change this to `static` to see
+      openAnalyzer: true,
     },
   },
 };

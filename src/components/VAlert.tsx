@@ -6,7 +6,7 @@ export default ofType<Props, Events>().convert(VAlert as any);
 
 type Props = Colorable &
   Transitionable & {
-    dismissable?: boolean;
+    dismissible?: boolean;
     icon?: string;
     mode?: string;
     origin?: string;
