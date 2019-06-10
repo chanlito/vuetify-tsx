@@ -39,7 +39,7 @@ const App = component({
 export default App;
 ```
 
-For more examples, see the [examples](./src/examples) folder in this repository.  
+For more examples, see the [examples](https://github.com/chanlito/vuetify-tsx/tree/master/src/views/examples) folder in this repository.  
 You can see the examples by checking out the project and using `npm install` and then `npm run serve`.
 
 ## Tip
