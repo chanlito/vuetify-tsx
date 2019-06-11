@@ -15,6 +15,7 @@ type Props = Colorable &
     'item-text': string | ((value: any) => string);
     multiple?: boolean;
     chips?: boolean;
+    required?: boolean;
   };
 
 type Events = {};
