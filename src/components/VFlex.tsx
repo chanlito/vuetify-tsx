@@ -55,4 +55,17 @@ interface Props {
   lg10?: boolean;
   lg11?: boolean;
   lg12?: boolean;
+
+  xl1?: boolean;
+  xl2?: boolean;
+  xl3?: boolean;
+  xl4?: boolean;
+  xl5?: boolean;
+  xl6?: boolean;
+  xl7?: boolean;
+  xl8?: boolean;
+  xl9?: boolean;
+  xl10?: boolean;
+  xl11?: boolean;
+  xl12?: boolean;
 }

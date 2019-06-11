@@ -1,18 +1,16 @@
 import { ofType } from 'vue-tsx-support';
 import { VBtnToggle } from 'vuetify/lib';
 
-import { Themable } from '../shared/types';
+import { CommonEvents } from '../types/events';
+import { Selectable, Themeable } from '../types/props';
 
 export default ofType<Props, Events>().convert(VBtnToggle as any);
 
-type Props = Themable & {
-  inputValue?: any;
-  mandatory?: boolean;
-  multiple?: boolean;
-  value?: any;
-};
+type Props = Selectable &
+  Themeable & {
+    mandatory?: boolean;
+    multiple?: boolean;
+    value?: any;
+  };
 
-type Events = {
-  onChange: any;
-  onInput: any;
-};
+type Events = CommonEvents & {};

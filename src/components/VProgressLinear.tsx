@@ -1,12 +1,12 @@
 import { ofType } from 'vue-tsx-support';
 import { VProgressLinear } from 'vuetify/lib';
 
-import { Colorable, Themable } from '../shared/types';
+import { Colorable, Themeable } from '../types/props';
 
 export default ofType<Props>().convert(VProgressLinear as any);
 
 type Props = Colorable &
-  Themable & {
+  Themeable & {
     active?: boolean;
     backgroundColor?: string;
     backgroundOpacity?: number | string;

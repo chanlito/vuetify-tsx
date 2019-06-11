@@ -1,5 +1,7 @@
 export { default as VAlert } from './components/VAlert';
 export { default as VApp } from './components/VApp';
+export { default as VAppBar } from './components/VAppBar';
+export { default as VAppBarNavIcon } from './components/VAppBarNavIcon';
 export { default as VAutocomplete } from './components/VAutocomplete';
 export { default as VAvatar } from './components/VAvatar';
 export { default as VBadge } from './components/VBadge';
@@ -34,6 +36,17 @@ export { default as VListTileAvatar } from './components/VListTileAvatar';
 export { default as VListTileContent } from './components/VListTileContent';
 export { default as VListTileSubTitle } from './components/VListTileSubTitle';
 export { default as VListTileTitle } from './components/VListTileTitle';
+export { default as VListItem } from './components/VListItem';
+export { default as VListItemAction } from './components/VListItemAction';
+export {
+  default as VListItemActionText,
+} from './components/VListItemActionText';
+export { default as VListItemAvatar } from './components/VListItemAvatar';
+export { default as VListItemContent } from './components/VListItemContent';
+export { default as VListItemIcon } from './components/VListItemIcon';
+export { default as VListItemGroup } from './components/VListItemGroup';
+export { default as VListItemSubtitle } from './components/VListItemSubtitle';
+export { default as VListItemTitle } from './components/VListItemTitle';
 export { default as VMenu } from './components/VMenu';
 export { default as VNavigationDrawer } from './components/VNavigationDrawer';
 export { default as VProgressCircular } from './components/VProgressCircular';

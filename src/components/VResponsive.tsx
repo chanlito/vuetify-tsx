@@ -1,7 +1,7 @@
 import { ofType } from 'vue-tsx-support';
 import { VResponsive } from 'vuetify/lib';
 
-import { Measurable } from '../shared/types';
+import { Measurable } from '../types/props';
 
 export default ofType<Props>().convert(VResponsive as any);
 

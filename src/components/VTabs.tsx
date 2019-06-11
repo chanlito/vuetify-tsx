@@ -1,13 +1,13 @@
 import { ofType } from 'vue-tsx-support';
 import { VTabs } from 'vuetify/lib';
 
-import { Colorable, Routable, Themable } from '../shared/types';
+import { Colorable, Routable, Themeable } from '../types/props';
 
 export default ofType<Props, Events>().convert(VTabs as any);
 
 type Props = Colorable &
   Routable &
-  Themable & {
+  Themeable & {
     alignWithTitle?: boolean;
     centered?: boolean;
     fixedTabs?: boolean;

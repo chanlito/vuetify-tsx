@@ -1,19 +1,16 @@
 import { ofType } from 'vue-tsx-support';
 import { VBadge } from 'vuetify/lib';
 
-import { Colorable, Positionable, Transitionable } from '../shared/types';
+import { CommonEvents } from '../types/events';
+import { Colorable, Positionable, Transitionable } from '../types/props';
 
 export default ofType<Props, Events>().convert(VBadge as any);
 
 type Props = Colorable &
   Positionable &
   Transitionable & {
-    mode?: string;
-    origin?: string;
     overlap?: boolean;
     value?: any;
   };
 
-type Events = {
-  onInput?: any;
-};
+type Events = CommonEvents & {};

@@ -34,8 +34,8 @@ const Cards = component({
                 </VCardTitle>
                 <VCardText>{this.cardText}</VCardText>
                 <VCardActions>
-                  <VBtn flat>Share</VBtn>
-                  <VBtn flat color="orange">
+                  <VBtn text>Share</VBtn>
+                  <VBtn text color="orange">
                     Explore
                   </VBtn>
                 </VCardActions>
@@ -54,8 +54,8 @@ const Cards = component({
                 <VCardText>{this.cardText}</VCardText>
                 <VCardActions>
                   <VSpacer />
-                  <VBtn flat>Share</VBtn>
-                  <VBtn flat color="orange">
+                  <VBtn text>Share</VBtn>
+                  <VBtn text color="orange">
                     Explore
                   </VBtn>
                 </VCardActions>

@@ -1,15 +1,30 @@
 import { ofType } from 'vue-tsx-support';
 import { VList } from 'vuetify/lib';
 
-import { Colorable, Denseable, Themable } from '../shared/types';
+import {
+  Activatable,
+  Colorable,
+  Denseable,
+  Elevatable,
+  Measurable,
+  Themeable,
+} from '../types/props';
 
 export default ofType<Props>().convert(VList as any);
 
-type Props = Colorable &
+type Props = Activatable &
+  Colorable &
+  Elevatable &
   Denseable &
-  Themable & {
+  Measurable &
+  Themeable & {
     expand?: boolean;
+    flat?: boolean;
+    nav?: boolean;
+    rounded?: boolean;
+    shaped?: boolean;
     subheader?: boolean;
-    twoLine?: boolean;
+    tile?: boolean;
     threeLine?: boolean;
+    twoLine?: boolean;
   };

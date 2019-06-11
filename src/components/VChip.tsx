@@ -1,19 +1,14 @@
 import { ofType } from 'vue-tsx-support';
 import { VChip } from 'vuetify/lib';
 
-import {
-  Colorable,
-  CommonEvents,
-  Disableable,
-  Sizeable,
-  Themable,
-} from '../shared/types';
+import { CommonEvents } from '../types/events';
+import { Activatable, Colorable, Sizeable, Themeable } from '../types/props';
 
 export default ofType<Props, Events>().convert(VChip as any);
 
-type Props = Colorable &
-  Disableable &
-  Themable &
+type Props = Activatable &
+  Colorable &
+  Themeable &
   Sizeable & {
     close?: boolean;
     label?: boolean;

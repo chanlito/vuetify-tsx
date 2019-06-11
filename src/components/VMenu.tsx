@@ -2,19 +2,19 @@ import { ofType } from 'vue-tsx-support';
 import { VMenu } from 'vuetify/lib';
 
 import {
+  Activatable,
   Detachable,
-  Disableable,
   Positionable,
-  Themable,
+  Themeable,
   Transitionable,
-} from '../shared/types';
+} from '../types/props';
 
 export default ofType<Props>().convert(VMenu as any);
 
-type Props = Detachable &
-  Disableable &
+type Props = Activatable &
+  Detachable &
   Positionable &
-  Themable &
+  Themeable &
   Transitionable & {
     allowOverflow?: boolean;
     auto?: boolean;

@@ -1,17 +1,17 @@
 import { ofType } from 'vue-tsx-support';
 import { VCombobox } from 'vuetify/lib';
 
+import { CommonEvents } from '../types/events';
 import {
   Colorable,
-  CommonEvents,
   Detachable,
   Inputable,
   Loadable,
   Maskable,
   Selectable,
-  Themable,
+  Themeable,
   Validatable,
-} from '../shared/types';
+} from '../types/props';
 
 export default ofType<Props, Events, ScopedSlots>().convert(VCombobox as any);
 
@@ -19,7 +19,7 @@ type Props = Colorable &
   Detachable &
   Inputable &
   Loadable &
-  Themable &
+  Themeable &
   Maskable &
   Selectable &
   Validatable & {

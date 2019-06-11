@@ -31,7 +31,7 @@ export default component({
             </VCardText>
             <VCardActions>
               <VSpacer />
-              <VBtn flat color="accent">
+              <VBtn text color="accent">
                 Learn More
               </VBtn>
             </VCardActions>

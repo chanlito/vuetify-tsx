@@ -1,19 +1,19 @@
 import { component } from 'vue-tsx-support';
 
 import VApp from './components/VApp';
+import VAppBar from './components/VAppBar';
+import VAppBarNavIcon from './components/VAppBarNavIcon';
 import VContainer from './components/VContainer';
 import VContent from './components/VContent';
 import VIcon from './components/VIcon';
 import VList from './components/VList';
-import VListTile from './components/VListTile';
-import VListTileAction from './components/VListTileAction';
-import VListTileContent from './components/VListTileContent';
-import VListTileTitle from './components/VListTileTitle';
-import VNavigationDrawer from './components/VNavigationDrawer';
-import VToolbar from './components/VToolbar';
-import VToolbarSideIcon from './components/VToolbarSideIcon';
-import VToolbarTitle from './components/VToolbarTitle';
 import VListGroup from './components/VListGroup';
+import VListItem from './components/VListItem';
+import VListItemContent from './components/VListItemContent';
+import VListItemIcon from './components/VListItemIcon';
+import VListItemTitle from './components/VListItemTitle';
+import VNavigationDrawer from './components/VNavigationDrawer';
+import VToolbarTitle from './components/VToolbarTitle';
 
 const App = component({
   name: 'App',
@@ -67,6 +67,12 @@ const App = component({
     };
   },
 
+  computed: {
+    appBarStyle(): { [key: string]: string } {
+      return { padding: this.$vuetify.breakpoint.mdAndUp ? '0 12px' : '0' };
+    },
+  },
+
   methods: {
     updateDrawer(value: boolean) {
       this.drawer = value;
@@ -80,10 +86,10 @@ const App = component({
   render() {
     return (
       <VApp>
-        <VToolbar app clippedLeft color="primary">
-          <VToolbarSideIcon onClick={this.toggleDrawer} />
+        <VAppBar app clippedLeft color="primary" dark style={this.appBarStyle}>
+          <VAppBarNavIcon onClick={this.toggleDrawer} />
           <VToolbarTitle>Vuetify</VToolbarTitle>
-        </VToolbar>
+        </VAppBar>
 
         <VContent>
           <VContainer>
@@ -94,40 +100,34 @@ const App = component({
         <VNavigationDrawer
           app
           clipped
-          dark
           value={this.drawer}
           onInput={this.updateDrawer}
         >
-          <VList color="primary">
+          <VList dense nav>
             {this.menu.map(({ icon, label, to, exact, menu }) =>
               menu && menu.length ? (
-                <VListGroup noAction value={true}>
-                  <VListTile slot="activator" to={to} exact={exact}>
-                    <VListTileAction>
-                      <VIcon>{icon}</VIcon>
-                    </VListTileAction>
-                    <VListTileContent>
-                      <VListTileTitle>{label}</VListTileTitle>
-                    </VListTileContent>
-                  </VListTile>
+                <VListGroup noAction prependIcon="dashboard" value={true}>
+                  <VListItemContent slot="activator">
+                    <VListItemTitle>{label}</VListItemTitle>
+                  </VListItemContent>
 
                   {menu.map(subMenu => (
-                    <VListTile to={subMenu.to}>
-                      <VListTileContent>
-                        <VListTileTitle>{subMenu.label}</VListTileTitle>
-                      </VListTileContent>
-                    </VListTile>
+                    <VListItem to={subMenu.to}>
+                      <VListItemContent>
+                        <VListItemTitle>{subMenu.label}</VListItemTitle>
+                      </VListItemContent>
+                    </VListItem>
                   ))}
                 </VListGroup>
               ) : (
-                <VListTile to={to} exact={exact}>
-                  <VListTileAction>
+                <VListItem to={to} exact={exact}>
+                  <VListItemIcon>
                     <VIcon>{icon}</VIcon>
-                  </VListTileAction>
-                  <VListTileContent>
-                    <VListTileTitle>{label}</VListTileTitle>
-                  </VListTileContent>
-                </VListTile>
+                  </VListItemIcon>
+                  <VListItemContent>
+                    <VListItemTitle>{label}</VListItemTitle>
+                  </VListItemContent>
+                </VListItem>
               ),
             )}
           </VList>

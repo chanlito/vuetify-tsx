@@ -1,16 +1,22 @@
 import { ofType } from 'vue-tsx-support';
 import { VListGroup } from 'vuetify/lib';
 
-export default ofType<Props>().convert(VListGroup as any);
+import { CommonEvents } from '../types/events';
+import { Activatable, Bootable, Rippleable } from '../types/props';
 
-type Props = {
-  activeClass?: string;
-  appendIcon?: string;
-  disabled?: boolean;
-  group?: string;
-  lazy?: boolean;
-  noAction?: boolean;
-  prependIcon?: string;
-  subGroup?: boolean;
-  value?: any;
-};
+export default ofType<Props, Events>().convert(VListGroup as any);
+
+type Props = Activatable &
+  Bootable &
+  Rippleable & {
+    activeClass?: string;
+    appendIcon?: string;
+    group?: string;
+    lazy?: boolean;
+    noAction?: boolean;
+    prependIcon?: string;
+    subGroup?: boolean;
+    value?: any;
+  };
+
+type Events = CommonEvents & {};

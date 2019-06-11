@@ -1,56 +1,34 @@
 import { ofType } from 'vue-tsx-support';
 import { VTextarea } from 'vuetify/lib';
 
+import { CommonEvents } from '../types/events';
 import {
+  Activatable,
   Colorable,
-  CommonEvents,
-  Disableable,
   Inputable,
+  Loadable,
+  Maskable,
   Measurable,
-  Themable,
+  Themeable,
   Validatable,
-} from '../shared/types';
+} from '../types/props';
 
 export default ofType<Props, Events>().convert(VTextarea as any);
 
-type Props = Colorable &
-  Disableable &
+type Props = Activatable &
+  Colorable &
   Inputable &
+  Loadable &
+  Maskable &
   Measurable &
-  Themable &
+  Themeable &
   Validatable & {
-    appendOuterIcon?: Function;
-    appendOuterIconCb?: Function;
-    autofocus?: boolean;
-    box?: boolean;
-    browserAutocomplete?: string;
-    clearIcon?: string;
-    clearIconCb?: Function;
-    clearable?: boolean;
-    counter?: boolean | number | string;
-    flat?: boolean;
-    fullWidth?: boolean;
-    loading?: boolean | string;
-    mask?: string | object;
-    outline?: boolean;
-    name?: string;
-    placeholder?: string;
-    prefix?: string;
-    prependInnerIcon?: string;
-    prependInnerIconCb?: Function;
-    returnMaskedValue?: boolean;
-    reverse?: boolean;
-    singleLine?: boolean;
-    solo?: boolean;
-    soloInverted?: boolean;
-    suffix?: string;
     /** @deprecated */
     textarea?: boolean;
-    type?: string;
     autoGrow?: boolean;
     noResize?: boolean;
     rowHeight?: number | string;
     rows?: number | string;
   };
 
-type Events = CommonEvents;
+type Events = CommonEvents & {};

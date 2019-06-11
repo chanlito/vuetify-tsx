@@ -1,7 +1,7 @@
 import { ofType } from 'vue-tsx-support';
 import { VCarouselItem } from 'vuetify/lib';
 
-import { Transitionable } from '../shared/types';
+import { Transitionable } from '../types/props';
 
 export default ofType<Props, Events>().convert(VCarouselItem as any);
 

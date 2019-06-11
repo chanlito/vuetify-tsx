@@ -1,7 +1,7 @@
 import { ofType } from 'vue-tsx-support';
 import { VSpeedDial } from 'vuetify/lib';
 
-import { Positionable, Routable, Transitionable } from '../shared/types';
+import { Positionable, Routable, Transitionable } from '../types/props'
 
 export default ofType<Props, Events>().convert(VSpeedDial as any);
 

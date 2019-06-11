@@ -1,12 +1,12 @@
 import { ofType } from 'vue-tsx-support';
 import { VTimeline } from 'vuetify/lib';
 
-import { Denseable, Themable } from '../shared/types';
+import { Denseable, Themeable } from '../types/props';
 
 export default ofType<Props, Events>().convert(VTimeline as any);
 
 type Props = Denseable &
-  Themable & {
+  Themeable & {
     alignTop?: boolean;
   };
 

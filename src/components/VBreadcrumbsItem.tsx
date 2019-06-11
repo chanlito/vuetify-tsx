@@ -1,10 +1,10 @@
 import { ofType } from 'vue-tsx-support';
 import { VBreadcrumbsItem } from 'vuetify/lib';
 
-import { Disableable, Routable } from '../shared/types';
+import { Activatable, Routable } from '../types/props';
 
 export default ofType<Props, Events>().convert(VBreadcrumbsItem as any);
 
-type Props = Disableable & Routable & {};
+type Props = Activatable & Routable & {};
 
 type Events = {};

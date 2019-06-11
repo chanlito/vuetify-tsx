@@ -1,13 +1,13 @@
 import { ofType } from 'vue-tsx-support';
 import { VListTile } from 'vuetify/lib';
 
-import { Colorable, Disableable, Routable, Themable } from '../shared/types';
+import { Activatable, Colorable, Routable, Themeable } from '../types/props';
 
 export default ofType<Props, Events>().convert(VListTile as any);
 
-type Props = Colorable &
-  Disableable &
-  Themable &
+type Props = Activatable &
+  Colorable &
+  Themeable &
   Routable & {
     avatar?: boolean;
     inactive?: boolean;

@@ -1,11 +1,11 @@
 import { ofType } from 'vue-tsx-support';
 import { VDataTable } from 'vuetify/lib';
 
-import { Themable } from '../shared/types';
+import { Themeable } from '../types/props';
 
 export default ofType<Props, Events, ScopedSlots>().convert(VDataTable as any);
 
-type Props = Themable & {
+type Props = Themeable & {
   customFilter?: (items: object[], search: string, filter: any) => any[];
   customSort?: (items: object[], index: number, isDescending: boolean) => any[];
   disableInitialSort?: boolean;

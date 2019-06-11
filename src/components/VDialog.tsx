@@ -2,18 +2,18 @@ import { ofType } from 'vue-tsx-support';
 import { VDialog } from 'vuetify/lib';
 
 import {
+  Activatable,
   Detachable,
-  Disableable,
-  Themable,
+  Themeable,
   Transitionable,
-} from '../shared/types';
+} from '../types/props';
 
 export default ofType<Props, Events>().convert(VDialog as any);
 
-type Props = Detachable &
-  Disableable &
+type Props = Activatable &
+  Detachable &
   Transitionable &
-  Themable & {
+  Themeable & {
     fullWidth?: boolean;
     fullscreen?: boolean;
     hideOverlay?: boolean;

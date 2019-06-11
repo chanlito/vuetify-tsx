@@ -1,15 +1,23 @@
 import { ofType } from 'vue-tsx-support';
 import { VToolbar } from 'vuetify/lib';
 
-import { Colorable, Denseable, Themable } from '../shared/types';
+import {
+  Applicationable,
+  Colorable,
+  Denseable,
+  Positionable,
+  Scrollable,
+  Themeable,
+} from '../types/props';
 
 export default ofType<Props>().convert(VToolbar as any);
 
-type Props = Colorable &
+type Props = Applicationable &
+  Colorable &
   Denseable &
-  Themable & {
-    absolute?: boolean;
-    app?: boolean;
+  Positionable &
+  Scrollable &
+  Themeable & {
     card?: boolean;
     tabs?: boolean;
     flat?: boolean;
@@ -18,12 +26,9 @@ type Props = Colorable &
     clippedRight?: boolean;
     extended?: boolean;
     extensionHeight?: number | string;
-    fixed?: boolean;
     floating?: boolean;
     invertedScroll?: boolean;
     manualScroll?: boolean;
     prominent?: boolean;
-    scrollTarget?: string;
-    scrollThreshold?: number;
     scrollToolbarOffScreen?: boolean;
   };

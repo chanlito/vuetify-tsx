@@ -1,11 +1,11 @@
 import { ofType } from 'vue-tsx-support';
 import { VBreadcrumbs } from 'vuetify/lib';
 
-import { Themable } from '../shared/types';
+import { Themeable } from '../types/props';
 
 export default ofType<Props, Events, ScopedSlot>().convert(VBreadcrumbs as any);
 
-type Props = Themable & {
+type Props = Themeable & {
   divider?: string;
   justifyCenter?: boolean;
   justifyEnd?: boolean;

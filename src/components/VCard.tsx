@@ -2,20 +2,24 @@ import { ofType } from 'vue-tsx-support';
 import { VCard } from 'vuetify/lib';
 
 import {
+  Activatable,
   Colorable,
-  Disableable,
+  Loadable,
   Measurable,
   Rippleable,
   Routable,
-} from '../shared/types';
+} from '../types/props';
 
 export default ofType<Props>().convert(VCard as any);
 
-type Props = Colorable &
-  Disableable &
+type Props = Activatable &
+  Colorable &
+  Loadable &
   Measurable &
   Rippleable &
   Routable & {
-    title?: boolean;
+    hover?: boolean;
+    outlined?: boolean;
     raised?: boolean;
+    title?: string;
   };

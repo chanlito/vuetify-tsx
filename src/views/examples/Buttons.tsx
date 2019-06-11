@@ -1,6 +1,8 @@
 import VBtn from '@/components/VBtn';
 import VBtnToggle from '@/components/VBtnToggle';
+import VContainer from '@/components/VContainer';
 import VDivider from '@/components/VDivider';
+import VFlex from '@/components/VFlex';
 import VIcon from '@/components/VIcon';
 import VLayout from '@/components/VLayout';
 import { component } from 'vue-tsx-support';
@@ -11,12 +13,31 @@ const Buttons = component({
     return (
       <div>
         <h2 class="display-1 mb-3 font-weight-bold">Alerts</h2>
-        <VLayout>
-          <VBtn color="primary">Click Me!</VBtn>
-          <VBtn depressed>Click Me!</VBtn>
-          <VBtn outline>Click Me!</VBtn>
-          <VBtn flat>Click Me!</VBtn>
-        </VLayout>
+        <VContainer grid-list-lg>
+          <VLayout wrap>
+            <VFlex>
+              <VBtn color="primary">Normal</VBtn>
+            </VFlex>
+            <VFlex>
+              <VBtn color="success" depressed>
+                Depressed
+              </VBtn>
+            </VFlex>
+            <VFlex>
+              <VBtn color="info" round>
+                Round
+              </VBtn>
+            </VFlex>
+            <VFlex>
+              <VBtn outline>Outline</VBtn>
+            </VFlex>
+            <VFlex>
+              <VBtn color="error" text>
+                Flat
+              </VBtn>
+            </VFlex>
+          </VLayout>
+        </VContainer>
         <VDivider class="my-5" />
         <VLayout>
           <VBtnToggle>
