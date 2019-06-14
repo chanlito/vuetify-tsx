@@ -25,6 +25,7 @@ type Props = Themable & {
   noDataText?: string;
   noResultsText?: string;
   pagination?: Pagination;
+  pagination_sync?: Pagination;
   prevIcon?: string;
   rowsPerPageItems?: any[];
   rowsPerPageText?: string;
