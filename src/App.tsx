@@ -58,6 +58,10 @@ const App = component({
               to: { name: 'components-cards' },
             },
             {
+              label: 'DataTables',
+              to: { name: 'components-data-tables' },
+            },
+            {
               label: 'Timelines',
               to: { name: 'components-timelines' },
             },
