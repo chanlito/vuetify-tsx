@@ -5,6 +5,7 @@ import Avatars from '@/views/examples/Avatars';
 import Breadcrumbs from '@/views/examples/Breadcrumbs';
 import Buttons from '@/views/examples/Buttons';
 import Cards from '@/views/examples/Cards';
+import DataTables from '@/views/examples/DataTables';
 import Timelines from '@/views/examples/Timelines';
 import Home from '@/views/Home';
 import Vue from 'vue';
@@ -55,6 +56,11 @@ const router = new Router({
           path: 'cards',
           name: 'components-cards',
           component: Cards,
+        },
+        {
+          path: 'data-tables',
+          name: 'components-data-tables',
+          component: DataTables,
         },
         {
           path: 'timelines',
