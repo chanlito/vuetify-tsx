@@ -23,6 +23,7 @@ export { default as VDataTable } from './components/VDataTable';
 export { default as VDialog } from './components/VDialog';
 export { default as VDivider } from './components/VDivider';
 export { default as VFlex } from './components/VFlex';
+export { default as VForm } from './components/VForm';
 export { default as VIcon } from './components/VIcon';
 export { default as VImg } from './components/VImg';
 export { default as VLayout } from './components/VLayout';
