@@ -24,6 +24,7 @@ type Props = Colorable &
     appendOuterIcon?: Function;
     /** @deprecated */
     appendOuterIconCb?: Function;
+    autocomplete?: 'on' | 'off';
     autofocus?: boolean;
     box?: boolean;
     browserAutocomplete?: string;
@@ -34,6 +35,16 @@ type Props = Colorable &
     flat?: boolean;
     fullWidth?: boolean;
     loading?: boolean | string;
+    on?: {
+      change?: (value: string) => any;
+      'click:append'?: (event: MouseEvent) => any;
+      'click:append-outer'?: (event: MouseEvent) => any;
+      'click:clear'?: (event: MouseEvent) => any;
+      'click:prepend'?: (event: MouseEvent) => any;
+      'click:prepend-inner'?: (event: MouseEvent) => any;
+      input?: (value: string) => any;
+      'update:error'?: (changed: boolean) => any;
+    };
     outline?: boolean;
     name?: string;
     placeholder?: string;
