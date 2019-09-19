@@ -1,4 +1,4 @@
-import { CommonEvents } from '@/shared/types';
+import { CommonEvents } from '..//shared/types';
 import { ofType } from 'vue-tsx-support';
 import { VForm } from 'vuetify/lib';
 
